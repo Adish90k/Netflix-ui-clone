@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "K2D", sans-serif;
+  color: white;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    max-height: 240vh;
+    overflow-x: hidden;
+}
+.sidenavbar ul {
+  margin-top: 70px;
+  margin-left: 9px;
+}
+.sidenavbar ul li {
+  margin-top: 30px;
+  padding: 4px;
+}
+.sidenavbar ul li a{
+    opacity: 1;
+}
+.sidenavbar ul li a:hover{
+    transition: 0.5s;
+    opacity: 0.5;
+}
+ 
+.sidenavbar {
+  display: inline-block;
+  width: 4vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+}
+.mainnavbar {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 96vw;
+  height: 10vh;
+  background-color: rgba(135, 135, 135, 0.301);
+}
+.mainnavbar ul {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin-left: 0vw;
+}
+.mainnavbar ul li {
+  padding: 0px 30px;
+  list-style: none;
+}
+.mainnavbar ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none; 
+  opacity: 1;
+  font-weight: 600;
+}
+.mainnavbar ul li a:hover{
+    transition: 0.5s;
+    opacity: 0.5;
+}
+#homenav{
+    margin-left: 80px;
+}
+.mainnavbar ul li p{
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-weight: 600;
+}
+
+.netflix_logo{
+    position: absolute;
+    width: 80px;
+}
+.profileimage {
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-left: 35vw;
+  margin-top: -2px;
+  margin-right:-20px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 25px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: -2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+.maincontent{
+    position: absolute;
+    top: 10vh;
+    left: 4vw;
+    height: 90vh;
+    width: 96vw;
+    background: url("images background/f-1background.jpg") no-repeat center center;
+    background-size:cover;
+}
+.main1content p{
+  color: white;
+}
+.main1content{
+    position: relative;
+    left: 2vw;
+    width: 50%;
+    top: 14vh;
+}
+.f-1-logo{
+   position:relative;
+   left: 2vw;
+   top: 10vh;
+   width: 240px;
+}
+#button1{
+    padding:8px 15px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    font-weight:600;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    color: black;
+    opacity: 1;
+}
+#button1:hover{
+    transition: 0.5s;
+    background-color: rgb(68, 130, 184);
+}
+.movie-list-title-1{
+margin-top: 80px;
+margin-bottom: -90px;
+}
+.movie-list-container{
+position: relative;
+ padding: 20px;
+}
+.movie-list{
+    display: flex;
+    height: 300px;
+}
+.movie-list-item{
+    margin-right: 30px;
+    position: relative;
+    height: 200px;
+   object-fit: cover;
+}
+.movie-list-item:hover .movie-list-item-img{
+transform: scale(1.2);
+margin: 0px 30px;
+opacity: 0.5;
+}
+ 
+.movie-list-item-img{
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 170px;
+    border-radius: 10px;
+}
+.movie-list{
+    margin-top: 110px;
+    position: relative;
+    display: flex;
+    transform: translate(0);
+    transition: all 1s ease-in-out;
+}
+.movie-list-item-button{
+    color: black;
+    padding:8px 12px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+    font-family: sans-serif;
+    position: absolute;
+    left:26px;
+    font-size: 10px;
+    top: 75%;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.movie-list-item-title{
+ background-color: rgba(0, 0, 0, 0.594);
+ padding: 0px 10px;
+ font-size: 32px;
+ font-weight: bold;
+ position: absolute;
+ top: 2%;
+ left: 20px;
+ opacity: 0;
+ transition: all 1s ease-in-out;
+}
+.movie-list-item-desc{
+    background-color: rgba(0, 0, 0, 0.594);
+    padding: 2px 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 28%;
+    left: 20px;
+    width: 210px;
+    opacity:0;
+    transition: all 1s ease-in-out;
+}
+.movie-list-item:hover .movie-list-item-title,.movie-list-item:hover .movie-list-item-button,.movie-list-item:hover .movie-list-item-desc
+{
+opacity: 1;
+}
+#arrow-1{
+    height:80px;
+    width: 80px;
+    position: absolute;
+    right: -10px;
+    top: 38%;
+    opacity: 0.3;
+    transition: 0.5s ease-in-out;
+}
+#arrow-1:hover{
+    opacity: 0.8;
+}
+#arrow-5{
+    height:80px;
+    width: 80px;
+    position: absolute;
+    right: 8px;
+    top: 38%;
+    opacity: 0.3;
+    transition: 0.5s ease-in-out;
+}
+#arrow-5:hover{
+    opacity: 0.8;
+}
+#arrow-2{
+    height:80px;
+    width: 80px;
+    position: absolute;
+    right:28px;
+    top: 40%;
+    opacity: 0.3;
+    transition: 0.5s ease-in-out;
+}
+#arrow-2:hover{
+    opacity: 0.8;
+}
+#arrow-3{
+    height:80px;
+    width: 80px;
+    opacity: 0.3;
+    position: absolute;
+    top: 38%;
+    left: 86%;
+}
+#arrow-3:hover{
+    opacity: 0.8;
+}
+.movie-list-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.movie-list-title-2{
+    margin-top: -120px;
+    margin-left: 20px;
+}
+.movie-list-wrapper-2{
+    padding: 20px;
+    margin-top: -105px;
+    position: relative;
+  overflow: hidden;
+}
+.maincontent2{
+    height: 100vh;
+    position: absolute;
+    top:140%;
+    background-color: black;
+    width:98%;
+    left: 0vw;
+}
+.imgmain2{
+    height: 100%;
+    width: 100%;
+}
+.maincontent2{
+    margin-top: 10px;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0),rgb(0, 0, 0)),url("images background/7149702.jpg") no-repeat center center;
+    background-size:cover;
+}
+.movie-list-title-4{
+    margin-left: -12px;
+    margin-top: -120px;
+    position: relative;
+}
+.movie-list-wrapper-4{
+    margin-left: -22px;
+    margin-top: -90px;
+    width: 100vw;
+    position: relative;
+    overflow-x: hidden;  
+}
+.socials {
+    position: absolute;
+    top: 270%;
+    left: 38%;
+}
+.socials a{
+    margin-right: 80px;
+}
+footer p{
+    position: absolute;
+    top: 276%;
+    left: 44%;  
+}
+
+
+.commentdiv{
+  
+}
